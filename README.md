@@ -1,7 +1,14 @@
-# State management using Vue 3 and Composition API
+# SkyXR ~ ONYX
 
-This repository has been made for a Medium article explaining how you create a really easy state without even having Vuex installed.
+Onyx is an experiment in cutting-edge coding techniques, layering project
+mgmt, education, & design into a single package.
 
-Preview here: https://vue3-composition-state.netlify.app/
+## Setup
 
-Read the article: https://vlourme.medium.com/state-management-using-vue-composition-api-e38ce24bc8af
+ONYX is a Vue3 project utilizing the Composition API, and is designed to be
+run using Vite & Yarn. Make sure you have the latest versions of both of those
+tools installed, and run:
+
+`yarn dev`
+
+to setup a local development environment.
