@@ -8,24 +8,21 @@ import { reactive, toRefs } from '@vue/reactivity';
  * it will not mutate.
  */
 const state = reactive({
-  counter: 0,
+  items: [],
 });
 
 export default () => {
-  /**
-   * Increment the counter
-   *
-   * @param amount Value to increment (default to `1`)
-   */
-  const increment = (amount = 1) => {
-    state.counter += amount;
+  const addItem = (item = "item") => {
+    state.items.push(item)
   };
 
-  /**
-   * Return the state as a `reference` to make it mutable.
-   */
+  const deleteItem = () => {
+    state.items.pop()
+  }
+
   return {
     state: toRefs(state),
-    increment,
+    addItem,
+    deleteItem,
   };
 };
